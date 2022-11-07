@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -17,7 +17,7 @@ namespace Captura.FFmpeg
         {
             var bits = Environment.Is64BitOperatingSystem ? 64 : 32;
 
-            FFmpegUri = new Uri($"https://ffmpeg.zeranoe.com/builds/win{bits}/static/ffmpeg-latest-win{bits}-static.zip");
+            FFmpegUri = new Uri($"https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win{bits}-gpl.zip");
 
             FFmpegArchivePath = Path.Combine(Path.GetTempPath(), "ffmpeg.zip");
         }
